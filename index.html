@@ -2,31 +2,25 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Embedded Google Drive File</title>
+  <title>Full Screen Google Drive Embed</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f9f9f9;
-      text-align: center;
-      padding: 40px;
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
     }
-    h1 {
-      color: #333;
-    }
-    .iframe-container {
-      margin-top: 20px;
-      display: inline-block;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    iframe {
+      border: none;
+      width: 100vw;
+      height: 100vh;
     }
   </style>
 </head>
 <body>
 
-  <h1>View Google Drive File</h1>
-
-  <div class="iframe-container">
-    <iframe src="https://drive.google.com/file/d/1qoo1npRUsXLk6902V7-ZJDLU8YSRVScb/preview" width="640" height="480" allow="autoplay"></iframe>
-  </div>
+  <iframe src="https://drive.google.com/file/d/1qoo1npRUsXLk6902V7-ZJDLU8YSRVScb/preview" allow="autoplay"></iframe>
 
 </body>
 </html>
