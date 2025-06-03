@@ -2,19 +2,31 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Crossword Puzzle</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Embedded Google Drive File</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      text-align: center;
+      padding: 40px;
+    }
+    h1 {
+      color: #333;
+    }
+    .iframe-container {
+      margin-top: 20px;
+      display: inline-block;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+  </style>
 </head>
 <body>
-  <h1>Crossword Puzzle</h1>
-  <div id="crossword"></div>
-  <div id="clues">
-    <h3>Across</h3>
-    <ul id="across-clues"></ul>
-    <h3>Down</h3>
-    <ul id="down-clues"></ul>
+
+  <h1>View Google Drive File</h1>
+
+  <div class="iframe-container">
+    <iframe src="https://drive.google.com/file/d/1qoo1npRUsXLk6902V7-ZJDLU8YSRVScb/preview" width="640" height="480" allow="autoplay"></iframe>
   </div>
-  <button onclick="checkAnswers()">Check Answers</button>
-  <script src="script.js"></script>
+
 </body>
 </html>
